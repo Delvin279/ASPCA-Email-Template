@@ -23,14 +23,29 @@
 			.db { display: block!important; }
 			.dw { width:100%!important; min-width:100%!important; max-width:100%!important; }
 			.hm { display: none!important; font-size:0px!important; visibility:hidden; }
+            .logo img { width: 50px!important;}
+        }
+        
+        @media only screen and (max-width:540px){
+            .container {width:95%!important;}
+            .h2-header-text {font-size: 25px!important; line-height: 32px!important;}
 			}
-
-			@media only screen and (max-width:480px){
-				.container { width:95%!important; }
+        
+            @media only screen and (max-width:400px){
+            .container {width:95%!important;}
+            .h2-header-text {font-size: 20px!important; line-height: 28px!important;}
 			}
-
-
-	</style>
+            
+            @media only screen and (max-width:280px){
+            .container {width:95%!important;}
+            .h2-header-text { font-size: 17px!important; line-height: 22px!important; font-weight: 400!important;}
+            .logo img {width: 40px!important;}
+            .container .header-text-section .news {padding-top: 15px!important;}
+            .footer { padding-bottom: 20px!important;}
+            .footer .footer-info {display: none!important; font-size:0px!important; visibility:hidden;}
+			}
+	
+    </style>
 	
 </head>
 
@@ -46,11 +61,11 @@
                         <td align="center">
                             <table width="100%" border="0" cellspacing="0" cellpadding="0">
                                 <tr>
-                                    <td align="left" style="padding: 20px;">
+                                    <td class="logo" align="left" style="padding: 20px;">
                                         <a href="https://www.aspca.org/" target="_blank"><img src="https://i.ibb.co/G0DVnDX/asp-logo.jpg" alt="asp-logo" width="120" height="30" border="0" ></a>
                                     </td>
                                 </tr>
-                                <td width="580" height="2" style="background-color: #b6b8ba;"></td>
+                                <td width="560" height="2" style="background-color: #b6b8ba;"></td>
                             </table> 
                         </td>
                     </tr>
@@ -58,16 +73,16 @@
                     
                     <!-- Header h1 text starts -->
                     <tr>
-                        <td align="center">
+                        <td align="center" class="header-text-section">
                             <table width="95%" border="0" cellspacing="0" cellpadding="0">
                                 <tr>
-                                    <td align="left" style="font-family: 'Roboto', Arial, Helvetica, sans-serif; font-size: 13px; line-height: 16px; 
+                                    <td class="news" align="left" style="font-family: 'Roboto', Arial, Helvetica, sans-serif; font-size: 13px; line-height: 16px; 
                                     font-weight: 500; color: #b6b8ba; padding: 30px 0 15px 0px">
                                         News
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td align="left" style="font-family: 'Roboto', Arial, Helvetica, sans-serif; font-size: 36px; line-height: 45px; font-weight: 300; color: 
+                                    <td class="h2-header-text" align="left" style="font-family: 'Roboto', Arial, Helvetica, sans-serif; font-size: 36px; line-height: 45px; font-weight: 300; color: 
                                     #272626;">
                                         How to Keep Your Thanksgiving<br> 
                                         Pet-Safe!
@@ -220,8 +235,8 @@
                     <!-- footer image ends -->
 
                     <!-- footer starts -->
-                    <tr>
-                        <td align="center" bgcolor="#363636">
+                    <tr class="footer">
+                        <td align="center" bgcolor="#363636" class="footer">
                             <table width="100%" border="0" cellspacing="0" cellpadding="0">
                                 <tr>
                                     <td align="center" style="padding-top: 40px;">
@@ -229,7 +244,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td align="center" style="font-family: 'Roboto', Arial, Helvetica, sans-serif; font-size: 8px; line-height: 15px; 
+                                    <td class="footer-info" align="center" style="font-family: 'Roboto', Arial, Helvetica, sans-serif; font-size: 8px; line-height: 15px; 
                                     font-weight: 300; color: #848484; padding-top: 10px">
                                         © 2021 American Society for the Prevention of Cruelty to Animals. All rights reserved.<br>
                                         The ASPCA is a 501(c)(3) non-for-profit organization. <span><a href="https://www.aspca.org/about-us/privacy-policy" target="_blank" style="color: #ffffff;font-weight:400;text-decoration: none;">Privacy Policy &nbsp; Legal Info</a></span>
@@ -268,11 +283,6 @@
                         </td>
                     </tr>
                     <!-- footer ends -->
-
-
-                    
-                    
-                  
 
                     <!-- email body ends -->
                 </table>
